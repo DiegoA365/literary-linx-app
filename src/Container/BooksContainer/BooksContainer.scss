@@ -1,0 +1,44 @@
+@import "../../Assets/GlobalStyles/Assets.scss";
+
+.books-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .books-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      text-transform: uppercase;
+      font-size: 2em;
+      color: $white;
+      font-weight: 600;
+    }
+
+    div {
+      width: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: $softBlue;
+      color: $blue;
+      font-size: 0.95em;
+      font-weight: 600;
+    }
+  }
+}
+
+.book-list {
+  transition: $transition-ease;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}

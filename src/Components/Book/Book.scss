@@ -1,0 +1,48 @@
+@import "../../Assets/GlobalStyles/Assets.scss";
+@import "../../Assets/GlobalStyles/Mixin.scss";
+
+.book-card {
+  margin: auto;
+  background-color: $grays;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+  width: 300px;
+  height: 250px;
+  border-radius: 5px;
+
+  .book-data {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img {
+      border-radius: 5px;
+      width: 100px;
+    }
+
+    .book-info {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      h3 {
+        color: $white;
+        font-size: 0.95em;
+        font-weight: 700;
+      }
+
+      p {
+        color: $blue;
+        font-weight: 500;
+        font-size: 0.9em;
+      }
+    }
+  }
+
+  button {
+    @include BookButton;
+  }
+}

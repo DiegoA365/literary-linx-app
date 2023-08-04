@@ -1,0 +1,33 @@
+@import "../../Assets/GlobalStyles/Assets.scss";
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.filter-container {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid $soft-grays;
+  justify-content: center;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 0;
+}
+
+.home-data {
+  padding: 0 20px 0;
+  margin: 0 0 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .filter-container {
+    height: 25vh;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+}

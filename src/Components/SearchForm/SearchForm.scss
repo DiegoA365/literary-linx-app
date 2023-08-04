@@ -1,0 +1,59 @@
+@import "../../Assets/GlobalStyles/Assets.scss";
+
+.search-form {
+  position: relative;
+  display: flex;
+  width: 600px;
+  align-items: center;
+
+  input {
+    transition: $transition-ease;
+    width: 100%;
+    background-color: $soft-grays;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: $white;
+    height: 45px;
+
+    &::placeholder {
+      text-transform: capitalize;
+      color: $white;
+      font-size: 0.95em;
+    }
+  }
+
+  button {
+    height: 35px;
+    width: 100px;
+    position: absolute;
+    font-size: 0.9em;
+    border-radius: 5px;
+    right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-weight: 500;
+    color: $white;
+    display: flex;
+    background-color: $blue;
+    border: none;
+
+    &:hover {
+      transition: $transition-ease;
+      background-color: $white;
+      color: $dark;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .search-form {
+    width: 100%;
+  }
+}

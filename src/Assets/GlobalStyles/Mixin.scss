@@ -1,0 +1,92 @@
+@import "./Assets.scss";
+
+@mixin FilterStyle {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  gap: 10px;
+}
+
+@mixin FilterStyleTitle {
+  text-transform: capitalize;
+  font-size: 0.95em;
+  color: $white;
+  text-align: center;
+}
+
+@mixin Logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  img {
+    width: 40px;
+  }
+
+  h3 {
+    color: $white;
+    text-transform: capitalize;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+}
+
+@mixin NavbarButton {
+  background: none;
+  border: 1px solid $grays;
+  cursor: pointer;
+  height: 45px;
+  width: 45px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    transition: $transition-ease;
+    border: 1px solid $white;
+  }
+}
+
+@mixin LinkGithub {
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  height: 45px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 0.95em;
+  background: none;
+  border: 1px solid $grays;
+  color: $white;
+
+  &:hover {
+    transition: $transition-ease;
+    border: 1px solid transparent;
+    background-color: $white;
+    color: $dark;
+  }
+}
+
+@mixin BookButton {
+  cursor: pointer;
+  color: $white;
+  font-size: 0.95em;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid transparent;
+  text-transform: capitalize;
+  background-color: $blue;
+  padding: 12px;
+
+  &:hover {
+    transition: $transition-ease;
+    color: $blue;
+    background-color: $softBlue;
+    border: 1px solid $blue;
+  }
+}
